@@ -1,0 +1,22 @@
+X Problem mit selectInput und PSurface lösen
+
+PSurface wird für selectInput() benötigt
+
+public void selectInput(String prompt, String callback) {
+	selectInput(prompt, callback, null);
+}
+public void selectInput(String prompt, String callback, File file) {
+	selectInput(prompt, callback, file, this);
+}
+public void selectInput(String prompt, String callback,
+	File file, Object callbackObject) {
+	//selectInput(prompt, callback, file, callbackObject, null, this);
+	surface.selectInput(prompt, callback, file, callbackObject);
+}
+
+public PSurface createSurface() {  // ignore
+	return surface = new PSurfaceNone(this);
+}
+
+! PSurface wird zu PSurfaceNone !
+

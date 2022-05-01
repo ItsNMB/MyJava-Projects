@@ -1,0 +1,12 @@
+Command line exporter for MyJava Projects
+
+--help               Show this help text. Congratulations.
+
+--sketch=<name>      Specify the sketch folder (required)
+--output=<name>      Specify the output folder (optional and
+                     cannot be the same as the sketch folder.)
+
+--export             Export an application.
+--no-java            Do not embed Java. Use at your own risk!
+
+The --export must be the final parameter passed in.

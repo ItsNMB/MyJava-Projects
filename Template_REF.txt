@@ -1,0 +1,64 @@
+TIME:
+MILLIS | SECOND | MINUTE | HOUR | DAY | MONTH | YEAR
+DELAY
+
+LAUNCH | EXEC
+
+METHOD | THREAD
+
+PRINT | PRINTLN | PRINTARRAY | PRINTVAR | PRINTF | PRINTLNF | DEBUG | SHOWWARNING
+
+MATH | RANDOM | PERLIN NOISE
+
+JSON
+
+SELECT: INPUT | OUTPUT | FOLDER
+
+LIST: PATHS | FILES | FILES EXTENSIONS
+SKETCHPATH
+SKETCHFILE
+DATAPATH
+DATAFILE
+DATAFILEEXISTS
+
+READER | WRITER
+
+CREATE: INPUT | OUTPUT
+
+LOAD: BYTES | STRINGS
+
+SAVE: STREAM | BYTES | STRINGS
+
+
+ARRAY UTILITIES:
+
+ARRAYCOPY(SRC, DST);
+EXPAND                // Default 2x, extra arg new size
+APPEND                // arr, var
+SHORTEN               // Default -1, extra arg amount
+SPLICE                // arr, arr, index | arr, var, index   (works like insert)
+SUBSET                // arr, start | arr, start, count      (returns a part of the array)
+CONCAT                // arr, arr                             (combines arrays)
+REVERSE               // arr
+
+
+STRINGS:
+TRIM                  // string | string[]         (removes whitespaces)
+JOIN                  // string, [char | string]   (joins strings with given connectors)
+SPLIT                 // string, [char | string]   (splits string at every given delim)
+
+CASTING FUNCTIONS: 
+NEWTYPE NAME = parseNEWTYPE(OLDTYPE);
+STR                   // String.valueof(x); x = TYPE | TYPE[]
+NF                    // [var | arr], digits | [var | arr], left, right   {int | double}   (adds/removes digits from to-string-converted numbers)
+NFC                   // [var | arr]                                      {int | double}   (adds commas)
+NFS                   // [var | arr], digits | [var | arr], left, right   {int | double}   (space in front of positive numbers)
+NFP                   // [var | arr], digits | [var | arr], left, right   {int | double}   (+ in front of positive numbers)
+
+HEX BINARY CONVERSIONS
+HEX                   // var      (returns hex as string)
+UNHEX                 // string   (returns int)
+BINARY                // var      (returns binary as string)
+UNBINARY              // string   (returns int)
+
+
